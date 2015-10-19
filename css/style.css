@@ -1,6 +1,58 @@
 * {
   font-family: 'Oswald', sans-serif;
 }
+
+#holder {
+    margin-top: 50px;
+}
+
+#blackjack {
+    position: absolute;
+    text-align: center;
+    background: white;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+#blackjackholder {
+    width: 8%;
+    margin: 0 auto;
+}
+
+#playername {
+    display: block;
+    margin-left: 800px;
+    position: absolute;
+    margin-top: 150px;
+}
+
+h1 {
+    margin-top: 200px;
+}
+
+p1 {
+    width: 100%;
+    display: block;
+}
+
+input#name {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input#buyin {
+    text-align: center;
+}
+
+button#startbutton {
+    margin-top: 20px;
+    margin-right: 0;
+    font-size: 20px;
+    border-radius: 7px;
+    background: white;
+}
+
 .card-design {
     width: 90px;
     background-color: white;
@@ -188,7 +240,7 @@ margin-top: 1.2px;
     width: 180px;
 }
 
-#bankeroll-amount {
+#bankroll-amount {
     padding: 5px 8px 5px 8px;
     border: 1px solid #333;
     border-radius: 10px;
@@ -197,11 +249,25 @@ margin-top: 1.2px;
         float: right;
 }
 
+#amount-bank {
+    float: right;
+}
+
 #betamount {
     position: absolute;
     margin-top: 200px;
     margin-left: 650px;
     width: 180px;
+}
+
+#amount-bet {
+    float: right;
+}
+
+.dollarsign {
+    margin: 0px;
+    padding: 0px;
+    float: left;
 }
 
 #betboox {
@@ -214,7 +280,7 @@ margin-top: 1.2px;
 }
 
 #betreset {
-    margin-left: 50px;
+    margin-left: 60px;
     position: absolute;
     font-size: 15px;
 }
@@ -236,4 +302,89 @@ button#play {
     background: white;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+button#hit {
+    position: absolute;
+    margin-left: 415px;
+    margin-top: 150px;
+    font-size: 30px;
+    border-radius: 10px;
+    background: white;
+    display: block;
+}
+
+button#stay {
+    position: absolute;
+    margin-left: 415px;
+    margin-top: 211px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: white;
+    display: block;
+}
+
+#youbusted {
+  position: absolute;
+      display: block;
+      font-size: 100px;
+      text-align: right;
+      width: 40%;
+      margin-top: 170px;
+      padding-right: 30px;
+      background: white;
+      z-index: 20;
+}
+
+#youbusted p {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: -90px;
+}
+#youlose {
+  position: absolute;
+      display: block;
+      font-size: 100px;
+      text-align: right;
+      width: 40%;
+      margin-top: 170px;
+      padding-right: 30px;
+      background: white;
+      z-index: 20;
+}
+
+#youlose p {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: -90px;
+}
+#youwin {
+  position: absolute;
+      display: block;
+      font-size: 100px;
+      text-align: right;
+      width: 40%;
+      margin-top: 170px;
+      padding-right: 30px;
+      background: white;
+      z-index: 20;
+}
+
+#youwin p {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: -90px;
+}
+
+
+#insurance {
+  display:none;
+}
+
+#split{
+  display:none;
+}
+
+#doubledown{
+  display:none;
 }
