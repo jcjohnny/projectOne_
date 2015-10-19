@@ -7,31 +7,74 @@
   <title>Black Jack</title>
 </head>
 <body>
+  <div id="youbusted" style="display: none;">
+        BUSTED
+    <div id= "busted">
+    </div>
+    <p>
+      PLAY AGAIN?
+    </p>
+    <button type="button" class="playagain">play</button>
+    <button type="button" class="notagain">quit</button>
+  </div>
+  <div id="youlose" style="display: none;">
+        You Lose
+    <div id= "busted">
+    </div>
+    <p>
+      PLAY AGAIN?
+    </p>
+    <button type="button" class="playagain">play</button>
+    <button type="button" class="notagain">quit</button>
+  </div>
+  <div id="youwin" style="display: none;">
+        You Win
+    <div id= "busted">
+    </div>
+    <p>
+      PLAY AGAIN?
+    </p>
+    <button type="button" class="playagain">play</button>
+    <button type="button" class="notagain">quit</button>
+  </div>
+  <div id="blackjack">
+    <div id="blackjackholder">
+    <h1>Blackjack</h1>
+    <p1>Your Name</p1>
+    <input id="name" class="form-name" type="name" step="any"></input>
+    <p1>Buy In</p1>
+    <input id="buyin" class="form-buyin" type="number" step="any"></input>
+
+    <button id="startbutton" class="form-start" type="button">Start</button>
+    </div>
+  </div>
   <div id="holder">
   <div id="table">
     <div id="dealer">
-      <div id="evaluate-dealer-hand">Dealers Hand<div id="dealer-amount">18</div></div>
+      <div id="evaluate-dealer-hand">Dealers Hand<div id="dealer-amount"></div></div>
       <div id="dealer-cards">
         <div class="cards">
-          <div id="cardhide">
+          <div id="cardhide" style="display: none;">
 
           </div>
-          <div class="card-design"><div class="number">2</div><div class="suit">&#x2660;</div></div>
-          <div class="card-design"><div class="number">2</div><div class="suit">&#x2660;</div></div>
         </div>
       </div>
     </div>
     <div id="player">
-      <div id="evaluate-player-hand"><div id="player-amount">18</div>Player Hand</div>
+      <div id="playername">
+        name: <div id="currentplayername">
+
+        </div>
+      </div>
+      <div id="evaluate-player-hand"><div id="player-amount"></div>Player Hand</div>
       <div id="player-cards">
         <div class="cards">
-          <div class="card-design"><div class="number">2</div><div class="suit">&#x2660;</div></div>
-          <div class="card-design"><div class="number">2</div><div class="suit">&#x2660;</div></div>
-          <div class="card-design"><div class="number">2</div><div class="suit">&#x2660;</div></div>
+          <!-- <div class="card-design"><div class="number">2</div><div class="suit">&#x2660;</div></div>
+          <div class="card-design"><div class="number">2</div><div class="suit">&#x2660;</div></div> -->
         </div>
     </div>
-    <div id="bankroll">your bankroll<div id="bankeroll-amount">$555</div></div>
-    <div id="betamount"> <div id="betboox">$10</div><div id="betreset">reset bet</div></div>
+    <div id="bankroll">your bankroll<div id="bankroll-amount"><div class="dollarsign">$</div><div id="amount-bank">555</div></div></div>
+    <div id="betamount"> <div id="betboox"><div class="dollarsign">$</div><div id="amount-bet">0</div></div><div id="betreset">reset bet</div></div>
     <div class="chips">
       <div id="chip10"><div class="outerchip"><div class="outerstripe"><div class="inner-line"><div class="amount">10</div></div></div></div></div>
       <div id="chip25"><div class="outerchip"><div class="outerstripe"><div class="inner-line"><div class="amount">25</div></div></div></div></div>
@@ -40,6 +83,8 @@
     <div class="play buttons">
     <button type="button" id="play">play</button>
     </div>
+    <button type="button" id="hit">HIT</button>
+    <button type="button" id="stay">STAY</button>
   </div>
 </div>
 </div>
@@ -56,8 +101,6 @@
 
 <div id="bet amount"></div>
 
-    <button type="button" id="yes">Default</button>
-    <button type="button" id="no">Default</button>
 
 
 <script src='http://code.jquery.com/jquery-1.11.3.js'></script>
