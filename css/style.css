@@ -1,0 +1,239 @@
+* {
+  font-family: 'Oswald', sans-serif;
+}
+.card-design {
+    width: 90px;
+    background-color: white;
+    height: 130px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    float: left;
+    margin-left: 10px;
+
+    background: rgba(255,255,255,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%,   rgba(237,237,237,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+
+    -webkit-box-shadow: -3px 3px 9px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: -3px 3px 9px -3px rgba(0,0,0,0.53);
+    box-shadow: -3px 3px 9px -3px rgba(0,0,0,0.53);
+}
+
+.cards {
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+#cardhide {
+    position: absolute;
+    margin-left: 10px;
+    width: 90px;
+    height: 130px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-image: linear-gradient(-43deg, darkseagreen 25%, transparent 25%, transparent 50%, darkseagreen 50%, darkseagreen 75%, transparent 75%, transparent);
+    background-size: 4px 4px;
+    background-color: white;
+}
+
+#player {
+    margin-top: 320px;
+}
+
+#table {
+    width: 1250px;
+    border-radius: 5% 5% 200% 200%;
+    margin: 0 auto;
+    height: 618px;
+
+    left: 15%;
+    border-width: 11px;
+    border-style: double;
+    border-color: #847F76;
+    background: rgba(98,125,77,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1);
+}
+
+
+.number {
+    font-family: 'Oswald', sans-serif;
+    font-size: 90px;
+    margin-top: -15px;
+    margin-left: 5px;
+    float: left;
+    color: #616161;
+    text-shadow: -1px 2px 0 #FFFFFF, -2px 3px 0 #929292;
+}
+
+.suit {
+    float: left;
+    margin-top: 9px;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.chips {
+    margin-left: 505px;
+    position: absolute;
+    margin-top: 192px;
+}
+
+.outerchip {
+    border: 1px solid #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.outerstripe {
+    border: inset;
+    border-width: 3px;
+    border-style: dashed;
+    width: 29px;
+    height: 29px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: .5px;
+    box-sizing: border-box;
+    border-color: white;
+}
+
+.inner-line {
+    width: 21px;
+    height: 21px;
+    border: 1px solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-left: 1.2px;
+margin-top: 1.2px;
+}
+
+.amount {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    margin-left: 2.2px;
+    margin-top: -1px;
+    color: white;
+}
+
+#chip50 {
+    background: green;
+    border-radius: 100px;
+    margin: 5px;
+    float: left;
+}
+
+#chip25 {
+    background: blue;
+    border-radius: 100px;
+    margin: 5px;
+    float: left;
+}
+
+#chip10 {
+    background: red;
+    border-radius: 100px;
+    margin: 5px;
+    float: left;
+}
+
+#chip10 .amount {
+    margin-left: 3.5px;
+}
+
+#evaluate-dealer-hand {
+    margin-left: 510px;
+    position: absolute;
+    margin-top: 140px;
+    width: 130px;
+}
+
+#dealer-amount {
+    float: right;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+#evaluate-player-hand {
+    margin-left: 510px;
+    position: absolute;
+    margin-top: -30px;
+    width: 130px;
+}
+
+#player-amount {
+    float: right;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: -13px;
+}
+
+#bankroll {
+    position: absolute;
+    margin-left: 510px;
+    margin-top: 150px;
+    text-transform: uppercase;
+    width: 180px;
+}
+
+#bankeroll-amount {
+    padding: 5px 8px 5px 8px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-top: -5px;
+    background: white;
+        float: right;
+}
+
+#betamount {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 650px;
+    width: 180px;
+}
+
+#betboox {
+    padding: 5px 8px 5px 8px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-top: -5px;
+    background: white;
+    float: left;
+}
+
+#betreset {
+    margin-left: 50px;
+    position: absolute;
+    font-size: 15px;
+}
+
+.play.buttons {
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 250px;
+}
+
+button {
+    margin-right: 16px;
+}
+
+button#play {
+    width: 60px;
+    height: 30px;
+    border-radius: 6px;
+    background: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
